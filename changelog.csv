@@ -1,0 +1,51 @@
+Diff from,To,APIs Added,Method,URI,Description,APIs Deleted,Method,URI,Description,Notes
+2020-11/19,2020-11/27,0 APIs added,,,,1 APIs deleted,,,,Diff-2020-11-19-api-docs.yaml-2020-11-27-api-docs.yaml.html
+,,,,,,,GET,/eo/clients/status/check,"Check the status of Services, if it's Up and running",,,,
+2020-11/27,2020-12/02,3 APIs added,,,,0 APIs deleted,,,,Diff-2020-11-27-api-docs.yaml-2020-12-02-api-docs.yaml.html
+,,,GET,/eo/outcomes,Get Outcomes by page,,,,,,,,
+,,,GET,/eo/outcomes/checkpoints,Get Outcomes checkpoints by page,,,,,,,,
+,,,GET,/eo/eap/serviceplanconfig,Get EAP service plan config by page,,,,,,,,
+2020-12/02,2020-12/24,2 APIs added,,,,2 APIs deleted,,,,Diff-2020-12-02-api-docs.yaml-2020-12-24-api-docs.yaml.html
+,,,GET,/eo/outcomes/questionnaires,Get Outcomes by page,,GET,/eo/outcomes,Get Outcomes by page,,,,
+,,,GET,/eo/eapconfig,Get EAP service plan config by page,,GET,/eo/eap/serviceplanconfig,Get EAP service plan config by page,,,,
+2020-12/24,2021-01/12,3 APIs added,,,,1 APIs deleted,,,,Diff-2020-12-24-api-docs.yaml-2021-01-12-api-docs.yaml.html
+,,,GET,/eo/casehistory,Get client case history by page,,POST,/eo/codetables,get codeItems for a set of tables,,,,
+,,,GET,/eo/clients/status/check,"Check the status of Services, if it's Up and running",,,,,,,,
+,,,GET,/eo/codetables,get codeItems for a set of tables,,,,,,,,
+2021-01/12,2021-01/14,0 APIs added,,,,2 APIs deleted,,,,Diff-2021-01-12-api-docs.yaml-2021-01-14-api-docs.yaml.html
+,,,,,,,GET,/eo/casehistory,Get client case history by page,,,,
+,,,,,,,POST,/eo/eaps,Batch create or update EAPs,,,,
+2021-01/14,2021-02/18,3 APIs added,,,,0 APIs deleted,,,,Diff-2021-01-14-api-docs.yaml-2021-02-18-api-docs.yaml.html
+,,,POST,/eo/eaps,Batch create or update EAPs,,,,,,,,
+,,,POST,/eo/outcomes/checkpoints,Batch create or update outcomes checkpoints,,,,,,,,
+,,,POST,/eo/outcomes/questionnaires,Batch create or update outcomes questionnaires,,,,,,,,
+2021-02/18,2021-03/02,1 APIs added,,,,0 APIs deleted,,,,Diff-2021-02-18-api-docs.yaml-2021-03-02-api-docs.yaml.html
+,,,GET,/eo/batch/echo/{requestID},Echo Batch request payload burequestId,,,,,,,,
+2021-03/02,2021-10/26,0 APIs added,,,,0 APIs deleted,,,,Diff-2021-03-02-api-docs.yaml-2021-10-26-api-docs.yaml.html
+2021-10/26,2022-01/21,5 APIs added,,,,0 APIs deleted,,,,Diff-2021-10-26-api-docs.yaml-2022-01-21-api-docs.yaml.html
+,,,GET,/eo/careferral/,Get referral clients by page,,,,,,,,
+,,,POST,/eo/careferral/,Batch update Referral Client,,,,,,,,
+,,,POST,/eo/upload,Function to upload an attachment,,,,,,,,
+,,,POST,/eo/delete/{documentID},Function to delete an attachment,,,,,,,,
+,,,GET,/eo/files/{documentID},Function to read / download an attachment,,,,,,,,
+2022-01/21,2022-05/25,5 APIs added,,,,0 APIs deleted,,,,Diff-2022-01-21-api-docs.yaml-2022-05-25-api-docs.yaml.html
+,,,GET,/eo/ssmUsers,Get SSM User details,,,,,,,,
+,,,GET,/eo/pbfapprovalsubmission,Get PBFApprovalSubmission by page,,,,,,,,
+,,,GET,/eo/fsapprovalsubmission,Get FSApprovalSubmission by page,,,,,,,,
+,,,GET,/eo/caclientrecords/,Get CA client records by page,,,,,,,,
+,,,POST,/eo/employers,null,,,,,,,,
+2022-11/01,2022-12/01,0 APIs added,,,,0 APIs deleted,,,,Diff-2022-11-api-docs.yaml-2022-12-api-docs.yaml.html
+2022-12/01,2023-01/01,0 APIs added,,,,0 APIs deleted,,,,Diff-2022-12-api-docs.yaml-2023-01-api-docs.yaml.html
+2023-01/01,2023-02/01,0 APIs added,,,,0 APIs deleted,,,,Diff-2023-01-api-docs.yaml-2023-02-api-docs.yaml.html
+2023-02/01,2023-04/03,0 APIs added,,,,0 APIs deleted,,,,Diff-2023-02-api-docs.yaml-2023-04-03-api-docs.yaml.html
+2023-04/03,2023-06/16,0 APIs added,,,,0 APIs deleted,,,,Diff-2023-04-03-api-docs.yaml-2023-06-16-api-docs.yaml.html
+2023-06/16,2023-07/14,0 APIs added,,,,0 APIs deleted,,,,Diff-2023-06-16-api-docs.yaml-2023-07-14-api-docs.yaml.html
+2023-07/14,2023-09/15,0 APIs added,,,,0 APIs deleted,,,,Diff-2023-07-14-api-docs.yaml-2023-09-15-api-docs.yaml.html
+2023-09/15,2023-11/01,0 APIs added,,,,0 APIs deleted,,,,Diff-2023-09-15-api-docs.yaml-2023-11-api-docs.yaml.html
+2024-01/19,2024-06/01,2 APIs added,,,,0 APIs deleted,,,,Diff-2024-01-19-api-docs.yaml-2024-06-api-docs.yaml.html
+,,,GET,/eo/status/check/v2,null,,,,,,,,
+,,,GET,/eo/sahistory,Get SA Case Information,,,,,,,,
+2024-06/01,2024-09/01,0 APIs added,,,,0 APIs deleted,,,,Diff-2024-06-api-docs.yaml-2024-09-api-docs.yaml.html
+2024-09/01,2024-10/01,1 APIs added,,,,0 APIs deleted,,,,Diff-2024-09-api-docs.yaml-2024-10-api-docs.yaml.html
+,,,GET,/eo/corporate,Get corporate and employers by page,,,,,,,,
+2024-10/01,2024-12/01,0 APIs added,,,,0 APIs deleted,,,,Diff-2024-10-api-docs.yaml-2024-12-api-docs.yaml.html

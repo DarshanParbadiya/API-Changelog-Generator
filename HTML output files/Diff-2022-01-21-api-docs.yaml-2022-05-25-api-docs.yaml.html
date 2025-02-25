@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Changelog</title>
+    <link
+      rel="stylesheet"
+      href="http://deepoove.com/swagger-diff/stylesheets/demo.css"
+    />
+  </head>
+  <body>
+    <header><h1>Changelog</h1></header>
+    <div class="article">
+      <div>
+        <h2>What&#x27;s New</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="GET">GET</span>/eo/ssmUsers
+            <span>Get SSM User details</span>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/pbfapprovalsubmission
+            <span>Get PBFApprovalSubmission by page</span>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/fsapprovalsubmission
+            <span>Get FSApprovalSubmission by page</span>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/caclientrecords/
+            <span>Get CA client records by page</span>
+          </li>
+          <li><span class="POST">POST</span>/eo/employers <span>null</span></li>
+        </ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Deleted</h2>
+        <hr />
+        <ol></ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Deprecated</h2>
+        <hr />
+        <ol></ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Changed</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="GET">GET</span>/eo/careferral/ <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/careferral/ <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/employers <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/batch/{requestID} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/clients <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/clients <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/outcomes/checkpoints <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/outcomes/checkpoints <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/outcomes/questionnaires
+            <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/outcomes/questionnaires
+            <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/batch/echo/{requestID} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/codetable/{tablename} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/codetables <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/upload <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema incompatible</h3></div>
+                    Changed body: &#x27;multipart/form-data&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/delete/{documentID} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/files/{documentID} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/status/check <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [401]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    New response : [403]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    New response : [500]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad Request</span
+                    >
+                    <ul class="change request-body">
+                      <li>New body: &#x27;application/json&#x27;</li>
+                      <li>Deleted body: &#x27;*/*&#x27;</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/clients/status/check <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [401]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    New response : [403]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    New response : [500]<span class="comment"
+                      >//Bad Request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad Request</span
+                    >
+                    <ul class="change request-body">
+                      <li>New body: &#x27;application/json&#x27;</li>
+                      <li>Deleted body: &#x27;*/*&#x27;</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/eaps <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Missing property:
+                          eapDetails[n].currentEmployerReference (string)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/eaps <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/eapconfig <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add ocp-apim-Subscription-key in header<span class="comment"
+                      >//Subscription Key of the Caller</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationid in header<span class="comment"
+                      >//ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add organizationsiteid in header<span class="comment"
+                      >//Site ID of Organization initiating call</span
+                    >
+                  </li>
+                  <li>
+                    Add userid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add transactiondatetime in header<span class="comment"
+                      >//Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response transactionDateTimeHeader.</span
+                    >
+                  </li>
+                  <li>
+                    Add transactionid in header<span class="comment"
+                      >//ID of User who is initiating call e.g. IAAP1234</span
+                    >
+                  </li>
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [503]<span class="comment"
+                      >//Bad request</span
+                    >
+                  </li>
+                  <li>
+                    Changed response : [400]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [403]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [500]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [401]<span class="comment"
+                      >//Bad request</span
+                    >
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type: (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

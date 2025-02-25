@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Changelog</title>
+    <link
+      rel="stylesheet"
+      href="http://deepoove.com/swagger-diff/stylesheets/demo.css"
+    />
+  </head>
+  <body>
+    <header><h1>Changelog</h1></header>
+    <div class="article">
+      <div>
+        <h2>What&#x27;s New</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="GET">GET</span>/eo/casehistory
+            <span>Get client case history by page</span>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/clients/status/check
+            <span
+              >Check the status of Services, if it&#x27;s Up and running</span
+            >
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/codetables
+            <span>get codeItems for a set of tables</span>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Deleted</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="POST">POST</span><del>/eo/codetables</del
+            ><span> get codeItems for a set of tables</span>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Deprecated</h2>
+        <hr />
+        <ol></ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Changed</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="GET">GET</span>/eo/status/check <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment"
+                      >//default response</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/clients <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</span
+                    >
+                  </li>
+                  <li>
+                    lastReturnedReferenceNumber in query Notes
+                    <del class="comment">The last Client reference number</del>
+                    change into
+                    <span class="comment"
+                      >The last Client reference number</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type:
+                          commonSearchResponse.numberOfRecords (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type: clients[n] (object -&gt;
+                          object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [404]<span class="comment"
+                      >//Not Found</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/clients
+            <span>Batch create or update clients</span>
+            <ul class="detail">
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/eaps <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</span
+                    >
+                  </li>
+                  <li>
+                    lastReturnedReferenceNumber in query Notes
+                    <del class="comment"
+                      >The last client reference number in last resultset</del
+                    >
+                    change into
+                    <span class="comment"
+                      >The last client reference number in last resultset</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type:
+                          commonSearchResponse.numberOfRecords (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type:
+                          eapDetails[n].eapGoal.goalWorkHours (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type:
+                          eapDetails[n].subGoals[n].plannedItems[n].placementDetail.employmentHoursPerWeek
+                          (integer -&gt; integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type:
+                          eapDetails[n].eapOutcome.outcomeWorkHours (integer
+                          -&gt; integer)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [404]<span class="comment"
+                      >//Not Found</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/eaps
+            <span>Batch create or update EAPs </span>
+            <ul class="detail">
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema incompatible</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                    <p class="missing">
+                      Changed property type: [n].eapGoal.goalWorkHours (integer
+                      -&gt; integer)
+                    </p>
+                    <p class="missing">
+                      Changed property type:
+                      [n].subGoals[n].plannedItems[n].placementDetail.employmentHoursPerWeek
+                      (integer -&gt; integer)
+                    </p>
+                    <p class="missing">
+                      Changed property type: [n].eapOutcome.outcomeWorkHours
+                      (integer -&gt; integer)
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/batch/{requestID} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/codetable/{tablename} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction used by Caller to track
+                      requests. It will be sent back unaltered to the caller in
+                      the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction used by Caller to track
+                      requests. It will be sent back unaltered to the caller in
+                      the response header.</span
+                    >
+                  </li>
+                  <li>
+                    tablename in path Notes
+                    <del class="comment">Code table name</del> change into
+                    <span class="comment">Code table name</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Missing property: codeItems[n].tableName (string)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/employers <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</span
+                    >
+                  </li>
+                  <li>
+                    lastReturnedReferenceNumber in query Notes
+                    <del class="comment"
+                      >The last employer reference number</del
+                    >
+                    change into
+                    <span class="comment"
+                      >The last employer reference number</span
+                    >
+                  </li>
+                  <li>
+                    employerReferenceNumber in query Notes
+                    <del class="comment"
+                      >The employer or corporate entity reference number as
+                      search criteria</del
+                    >
+                    change into
+                    <span class="comment"
+                      >The employer or corporate entity reference number as
+                      search criteria</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type:
+                          commonSearchResponse.numberOfRecords (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type: employers[n] (object -&gt;
+                          object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [404]<span class="comment"
+                      >//Not Found</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/outcomes/questionnaires
+            <span>Get Outcomes checkpoints by page</span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</span
+                    >
+                  </li>
+                  <li>
+                    lastReturnedReferenceNumber in query Notes
+                    <del class="comment"
+                      >The last reference number in last resultset</del
+                    >
+                    change into
+                    <span class="comment"
+                      >The last reference number in last resultset</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type:
+                          commonSearchResponse.numberOfRecords (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Missing property: outComeDetails[n].eapJobNatureCD
+                          (string)
+                        </p>
+                        <p class="missing">
+                          Missing property: outComeDetails[n].eapPaidHourPerWk
+                          (number)
+                        </p>
+                        <p class="missing">
+                          Missing property: outComeDetails[n].eapWageAmount
+                          (number)
+                        </p>
+                        <p class="missing">
+                          Missing property: outComeDetails[n].eapChgEmpCD
+                          (string)
+                        </p>
+                        <p class="missing">
+                          Changed property type:
+                          outComeDetails[n].eapCurNumJobsCount (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type:
+                          outComeDetails[n].eapNumEmpChangedCount (integer -&gt;
+                          integer)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [404]<span class="comment"
+                      >//Not Found</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/outcomes/checkpoints <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</span
+                    >
+                  </li>
+                  <li>
+                    lastReturnedReferenceNumber in query Notes
+                    <del class="comment"
+                      >The last client reference number in last resultset</del
+                    >
+                    change into
+                    <span class="comment"
+                      >The last client reference number in last resultset</span
+                    >
+                  </li>
+                  <li>
+                    eapReferenceNumber in query Notes
+                    <del class="comment"
+                      >The EAP reference number as search criteria</del
+                    >
+                    change into
+                    <span class="comment"
+                      >The EAP reference number as search criteria</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema incompatible</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                        <p class="missing">
+                          Changed property type:
+                          commonSearchResponse.numberOfRecords (integer -&gt;
+                          integer)
+                        </p>
+                        <p class="missing">
+                          Changed property type: outcomeCheckPointDetails[n]
+                          (object -&gt; object)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changed response : [404]<span class="comment"
+                      >//Not Found</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/eapconfig <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Parameters</h3>
+                <ul class="change param">
+                  <li>
+                    Add language in header<span class="comment"
+                      >//Locale of request - en, fr; default is en</span
+                    >
+                  </li>
+                  <li>
+                    transactionDateTime in header Notes
+                    <del class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</del
+                    >
+                    change into
+                    <span class="comment"
+                      >Timestamp of the transaction which used by Caller to
+                      track requests. It will be sent back unaltered to the
+                      caller in the response header.</span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body"></ul>
+                  </li>
+                  <li>
+                    Changed response : [404]<span class="comment"
+                      >//Not Found</span
+                    >
+                    <ul class="change request-body"></ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

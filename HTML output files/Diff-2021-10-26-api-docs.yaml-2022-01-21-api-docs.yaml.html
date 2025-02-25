@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Changelog</title>
+    <link
+      rel="stylesheet"
+      href="http://deepoove.com/swagger-diff/stylesheets/demo.css"
+    />
+  </head>
+  <body>
+    <header><h1>Changelog</h1></header>
+    <div class="article">
+      <div>
+        <h2>What&#x27;s New</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="GET">GET</span>/eo/careferral/
+            <span>Get referral clients by page</span>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/careferral/
+            <span>Batch update Referral Client </span>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/upload
+            <span>Function to upload an attachment </span>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/delete/{documentID}
+            <span>Function to delete an attachment </span>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/files/{documentID}
+            <span>Function to read / download an attachment </span>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Deleted</h2>
+        <hr />
+        <ol></ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Deprecated</h2>
+        <hr />
+        <ol></ol>
+      </div>
+      <div>
+        <h2>What&#x27;s Changed</h2>
+        <hr />
+        <ol>
+          <li>
+            <span class="GET">GET</span>/eo/batch/echo/{requestID} <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/clients <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/clients <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/eaps <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="POST">POST</span>/eo/eaps <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Request</h3>
+                <ul class="change request-body">
+                  <li>
+                    <div><h3>Schema</h3></div>
+                    Changed body: &#x27;application/json&#x27;
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/employers <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    Changed response : [200]<span class="comment">//OK</span>
+                    <ul class="change request-body">
+                      <li>
+                        <div><h3>Schema</h3></div>
+                        Changed body: &#x27;application/json&#x27;
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/status/check <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [400]<span class="comment"
+                      >//default response</span
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="GET">GET</span>/eo/clients/status/check <span></span>
+            <ul class="detail">
+              <li>
+                <h3>Response</h3>
+                <ul class="change response">
+                  <li>
+                    New response : [400]<span class="comment"
+                      >//default response</span
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
